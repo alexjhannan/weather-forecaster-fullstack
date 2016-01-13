@@ -1,0 +1,13 @@
+<div class="panel panel-info">
+			
+	<div class="panel-heading">
+		<h3 class="panel-title">{{ convertToDate({ dt: weatherDay.dt }) | date: dateFormat }}</h3>
+	</div>
+
+	<div class="panel-body">
+		<div class="text-center">Day: {{ convertToStandard({ temp: weatherDay.temp.day }) }}&deg;F</div>
+		<hr />
+		<div class="text-center">Night: {{ convertToStandard({ temp: weatherDay.temp.night }) }}&deg;F</div>
+	</div>
+				
+</div>
